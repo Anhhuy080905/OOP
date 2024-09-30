@@ -1,26 +1,9 @@
-public class SinhVien {
-    private String namsinh, hoten, MSSV;
+public class SinhVien extends Uet {
+    private String MSSV;
 
     public SinhVien(String namsinh, String hoten, String MSSV) {
-        this.namsinh = namsinh;
-        this.hoten = hoten;
+        super(namsinh, hoten);
         this.MSSV = MSSV;
-    }
-
-    public String getNamsinh() {
-        return namsinh;
-    }
-
-    public void setNamsinh(String namsinh) {
-        this.namsinh = namsinh;
-    }
-
-    public String getHoten() {
-        return hoten;
-    }
-
-    public void setHoten(String hoten) {
-        this.hoten = hoten;
     }
 
     public String getMSSV() {
